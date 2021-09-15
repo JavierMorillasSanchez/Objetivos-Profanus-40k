@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".juegoObjetivos">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center">
+
+        <ListView
+            android:id="@+id/lvJuegoObjetivos"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_margin="10dp">
+
+        </ListView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <CheckBox
+                android:id="@+id/cbDescartar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DESCARTAR OBJETIVOS"
+                android:textSize="15sp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtPuntosTotales"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="PV: 0"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
